@@ -1,0 +1,202 @@
+<!-- 快捷鍵的部分 -->
+<!-- command+/ 變綠色註解(切換成英文輸入法後再按) -->
+<!-- command+s 存擋 -->
+<!-- option+b 顯示網頁  -->
+
+
+
+<!-- 按!加tab即可出現基本型 -->
+
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<!-- 選擇語言中文-台灣 -->
+
+<head>
+    <title>阿布裡吧八</title>
+    <!-- 顯示在瀏覽器上的標籤名字 -->
+
+
+    <!-- 引用外部的css檔案樣式表改變我的樣式 -->
+    <!-- 打link選css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+
+<!-- 所有要顯示給使用者的內容都在body裡面 結尾的tag內容前面要加斜線 -->
+
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    ｂ
+    <p>這是文章段落，<del>這一行不小星寫錯</del></p>
+    <br>
+    <p>我來試試看，嘻嘻， <del>嘟嚕嘟嚕</del></p>
+
+
+    <!-- 按a+tab即會出現外部連結代碼 -->
+    <!-- 製作連結覆蓋原網頁 a[href=http://www.google.com]{google這是連結按鈕顯示的文字} -->
+    <a href="http://www.google/com">google</a>
+
+    <br>
+    <!-- 段落中加<br>可以換行 -->
+    <a href="snacklips.com">歪國零食嘴</a>
+    <br>
+
+
+    <!-- 加空白可以讓製作連結開新網頁 a[href=“http://www.google.com” target="_blank"]{google} -->
+    <!-- 注意要確定網址的部分變成紅色才有效果 -->
+    <a href="http://www.google.com" target="_blank">google</a>
+    <br>
+    <a href="snacklips.com" target="_blank">歪國零食嘴跳出 </a>
+    <br>
+
+
+    <!-- a[href=mailto:b04302239@ntu.edu.tw]{寄信給我} -->
+    <a href="mailto:b04302239@ntu.edu.tw">寄信給我</a>
+
+
+    <br>
+    <!-- 接下來進入影像單元02-07 -->
+    <!-- 打img+tab即出現影像 -->
+    <img src="https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2017/10/goldie.jpg" alt="我的狗狗">
+    <!-- img 後面加 src 代表來源(source) -->
+    <!-- alt的語法的功能 是給視障者聽圖片 -->
+
+    <br>
+
+    <!-- 現在想在影像上加上超連結 -->
+    <!-- a兒子底下的東西都有超連結的功能 -->
+    <!-- 讓img被包在a裡面 -->
+    <!-- a href=“連結網址”>按enter下一行<img＋空格＋src=“圖片網址”＋空格＋alt="字" -->
+    <a href="http://www.google.com">
+        <img src="https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2017/10/goldie.jpg" alt="你的狗狗"></a>
+
+    <br>
+
+    <!-- 如果我的影像來源是資料夾的話⋯⋯要放資料夾位子 -->
+    <!-- a[href=“連結網址”]>img src=“./img/goldie.jpg”] -->
+    <!-- 最前面的.代表同一個資料夾（第一層），第二層資料夾名是"img放影像的地方" -->
+    <a href="http://www.google.com"><img src="./img放影像的地方/goldie.jpg" alt="他的狗狗"></a>
+
+    <br>
+
+    <a href="http://www.google.com" target="blank_">
+        <img src="./img放影像的地方/goldie.jpg" alt=""></a>
+
+
+    <!-- 進入02-08 想要做LIST（前面有符號的列表） -->
+    <!-- 沒順序的是ul，有順序的是ol -->
+    <!-- 現在想做一個ul底下有3個li -->
+    <!-- ul>li*3 -->
+    <ul>
+        <li>第一項</li>
+        <li>第二項</li>
+        <li>第三項</li>
+    </ul>
+
+    <br>
+
+    <!-- 如果是有順序的ol -->
+    <ol>
+        <li>第一項</li>
+        <li>第二項</li>
+        <li>第三項</li>
+    </ol>
+
+    <br>
+
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ol>
+
+
+    <br>
+
+    <!-- 如果要把前面的123換成羅馬的123 -->
+    <!-- ol[type=i]>li*3 -->
+    <ol type="i">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!-- 進入單元02-09 TABLE履歷表格 -->
+    <!-- 打出 table>tr*5 之後，tr換行，在各個tr中間加入需要的td或th -->
+    <!-- 也可以打成table>(tr>td*4)*5 -->
+
+    <table>
+        <!-- tr指的是有幾個橫列 -->
+        <!-- td數量指的是有幾個直行 -->
+        <tr>
+            <td>班級</td>
+            <td>姓名</td>
+            <td>學號</td>
+            <td>分數</td>
+        </tr>
+        <tr>
+            <td>Ａ</td>
+            <td>黃金</td>
+            <td>燈燈</td>
+            <td>哼哼</td>
+        </tr>
+        <tr>
+            <td>Ｂ</td>
+            <td>臘腸</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ｃ</td>
+            <td>米格魯</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ｄ</td>
+            <td>科基</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- 自己練習：2*3的表格 -->
+    <table>
+        <td>
+            <tr>班級</tr>
+            <tr>姓名</tr>
+            <tr>學號</tr>
+        </td>
+        <td>
+            <tr>A</tr>
+            <tr>黃金</tr>
+            <tr>0123</tr>
+        </td>
+    </table>
+    <!-- 失敗了，因為tr會大於td，重來 -->
+    <table>
+        <tr>
+            <td>班級</td>
+            <td>姓名</td>
+            <td>學號</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>黃金</td>
+            <td>012222</td>
+        </tr>
+    </table>
+    <!-- 上面的成功，記得tr>td -->
+    <!-- 接下來用CSS更改表格編筐，到顯示網頁把表格反白後按右就檢查 -->
+    <!-- 決定表格寬度、顏色、樣式 -->
+    <!-- 在資料夾中開一個CSS資料夾，再新增index.css檔案 -->
+    <!-- 表格樣式等等在CSS檔中設定完成後，需回到html檔的上面head裡，告訴html要用這個css檔 -->
+
+</body>
+
+</html>ｂｂ
